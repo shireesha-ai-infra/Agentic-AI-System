@@ -36,13 +36,13 @@ Every iteration of the agent follows a strict **four-phase cycle**:
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
 │                                                                     │
-│   ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌─────────────┐  │
-│   │  OBSERVE │ →  │  THINK   │ →  │   ACT    │ →  │UPDATE STATE │  │
-│   │          │    │  (LLM)   │    │          │    │             │  │
-│   │ Gather   │    │ Reason & │    │ Execute  │    │ Log thought,│  │
-│   │ goal +   │    │ choose   │    │ the      │    │ action &    │  │
-│   │ history  │    │ action   │    │ action   │    │ result      │  │
-│   └──────────┘    └──────────┘    └──────────┘    └─────────────┘  │
+│   ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌─────────────┐   │
+│   │  OBSERVE │ →  │  THINK   │ →  │   ACT    │ →  │UPDATE STATE │   │
+│   │          │    │  (LLM)   │    │          │    │             │   │
+│   │ Gather   │    │ Reason & │    │ Execute  │    │ Log thought,│   │
+│   │ goal +   │    │ choose   │    │ the      │    │ action &    │   │
+│   │ history  │    │ action   │    │ action   │    │ result      │   │
+│   └──────────┘    └──────────┘    └──────────┘    └─────────────┘   │
 │                                                         │           │
 │   ◀─────────────────── Repeat until done ───────────────┘           │
 │                                                                     │
